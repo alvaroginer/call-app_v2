@@ -1,0 +1,290 @@
+{
+  "persons": [
+    {
+      "id": 1543456,
+      "name": "Person 1",
+      "number": "+1234567890",
+      "email": "person1@example.com",
+      "currentInterest": true,
+      "calls": [
+        {
+          "number": 1,
+          "customerInterest": 3,
+          "objectionsRaised": 1,
+          "conversionPotential": 4,
+          "callClosure": 2,
+          "callDuration": 5,
+          "technicalQuality": 3,
+          "callRating": 0
+        }
+      ],
+      "callsRating": 0,
+      "emails": {
+        "sent": 6,
+        "open": 2,
+        "clicked": 1,
+        "openRate": 33.33,
+        "block": 0,
+        "rebound": 1,
+        "rating": 2
+      },
+      "overallRating": 4
+    },
+    {
+      "id": 2895245,
+      "name": "Person 2",
+      "number": "+1987654321",
+      "email": "person2@example.com",
+      "currentInterest": false,
+      "calls": [],
+      "callsRating": 0,
+      "emails": {
+        "sent": 3,
+        "open": 1,
+        "clicked": 0,
+        "openRate": 33.33,
+        "block": 1,
+        "rebound": 0,
+        "rating": 1
+      },
+      "overallRating": 2
+    },
+    {
+      "id": 3783063,
+      "name": "Person 3",
+      "number": "+1122334455",
+      "email": "person3@example.com",
+      "currentInterest": true,
+      "calls": [
+        {
+          "number": 1,
+          "customerInterest": 5,
+          "objectionsRaised": 2,
+          "conversionPotential": 5,
+          "callClosure": 5,
+          "callDuration": 5,
+          "technicalQuality": 4,
+          "callRating": 0
+        },
+        {
+          "number": 2,
+          "customerInterest": 4,
+          "objectionsRaised": 3,
+          "conversionPotential": 4,
+          "callClosure": 3,
+          "callDuration": 6,
+          "technicalQuality": 5,
+          "callRating": 0
+        }
+      ],
+      "callsRating": 0,
+      "emails": {
+        "sent": 10,
+        "open": 7,
+        "clicked": 3,
+        "openRate": 70,
+        "block": 0,
+        "rebound": 0,
+        "rating": 5
+      },
+      "overallRating": 5
+    },
+    {
+      "id": 4967532,
+      "name": "Person 4",
+      "number": "+1445566778",
+      "email": "person4@example.com",
+      "currentInterest": false,
+      "calls": [
+        {
+          "number": 1,
+          "customerInterest": 2,
+          "objectionsRaised": 4,
+          "conversionPotential": 2,
+          "callClosure": 1,
+          "callDuration": 3,
+          "technicalQuality": 2,
+          "callRating": 0
+        }
+      ],
+      "callsRating": 0,
+      "emails": {
+        "sent": 5,
+        "open": 1,
+        "clicked": 0,
+        "openRate": 20,
+        "block": 1,
+        "rebound": 1,
+        "rating": 1
+      },
+      "overallRating": 2
+    },
+    {
+      "id": 5956325,
+      "name": "Person 5",
+      "number": "+1778899001",
+      "email": "person5@example.com",
+      "currentInterest": true,
+      "calls": [],
+      "callsRating": 0,
+      "emails": {
+        "sent": 8,
+        "open": 4,
+        "clicked": 2,
+        "openRate": 50,
+        "block": 0,
+        "rebound": 0,
+        "rating": 4
+      },
+      "overallRating": 3
+    },
+    {
+      "id": 6158742,
+      "name": "Person 6",
+      "number": "+1999888777",
+      "email": "person6@example.com",
+      "currentInterest": true,
+      "calls": [
+        {
+          "number": 1,
+          "customerInterest": 5,
+          "objectionsRaised": 1,
+          "conversionPotential": 5,
+          "callClosure": 5,
+          "callDuration": 8,
+          "technicalQuality": 5,
+          "callRating": 0
+        },
+        {
+          "number": 2,
+          "customerInterest": 4,
+          "objectionsRaised": 2,
+          "conversionPotential": 3,
+          "callClosure": 3,
+          "callDuration": 6,
+          "technicalQuality": 4,
+          "callRating": 0
+        },
+        {
+          "number": 3,
+          "customerInterest": 2,
+          "objectionsRaised": 3,
+          "conversionPotential": 2,
+          "callClosure": 1,
+          "callDuration": 4,
+          "technicalQuality": 3,
+          "callRating": 0
+        }
+      ],
+      "callsRating": 0,
+      "emails": {
+        "sent": 12,
+        "open": 9,
+        "clicked": 5,
+        "openRate": 75,
+        "block": 0,
+        "rebound": 0,
+        "rating": 5
+      },
+      "overallRating": 5
+    },
+    {
+      "id": 7641325,
+      "name": "Person 7",
+      "number": "+1555666777",
+      "email": "person7@example.com",
+      "currentInterest": false,
+      "calls": [],
+      "callsRating": 0,
+      "emails": {
+        "sent": 2,
+        "open": 0,
+        "clicked": 0,
+        "openRate": 0,
+        "block": 1,
+        "rebound": 1,
+        "rating": 1
+      },
+      "overallRating": 1
+    },
+    {
+      "id": 8645238,
+      "name": "Person 8",
+      "number": "+1223344556",
+      "email": "person8@example.com",
+      "currentInterest": true,
+      "calls": [
+        {
+          "number": 1,
+          "customerInterest": 3,
+          "objectionsRaised": 2,
+          "conversionPotential": 4,
+          "callClosure": 4,
+          "callDuration": 5,
+          "technicalQuality": 3,
+          "callRating": 0
+        }
+      ],
+      "callsRating": 0,
+      "emails": {
+        "sent": 7,
+        "open": 3,
+        "clicked": 1,
+        "openRate": 42.86,
+        "block": 0,
+        "rebound": 0,
+        "rating": 3
+      },
+      "overallRating": 3
+    },
+    {
+      "id": 1783269,
+      "name": "Person 9",
+      "number": "+1445566778",
+      "email": "person9@example.com",
+      "currentInterest": false,
+      "calls": [],
+      "callsRating": 0,
+      "emails": {
+        "sent": 4,
+        "open": 1,
+        "clicked": 0,
+        "openRate": 25,
+        "block": 1,
+        "rebound": 0,
+        "rating": 2
+      },
+      "overallRating": 2
+    },
+    {
+      "id": 1065113,
+      "name": "Person 10",
+      "number": "+1999887766",
+      "email": "person10@example.com",
+      "currentInterest": true,
+      "calls": [
+        {
+          "number": 1,
+          "customerInterest": 5,
+          "objectionsRaised": 2,
+          "conversionPotential": 4,
+          "callClosure": 4,
+          "callDuration": 6,
+          "technicalQuality": 4,
+          "callRating": 0
+        }
+      ],
+      "callsRating": 0,
+      "emails": {
+        "sent": 10,
+        "open": 6,
+        "clicked": 3,
+        "openRate": 60,
+        "block": 0,
+        "rebound": 0,
+        "rating": 4
+      },
+      "overallRating": 4
+    }
+  ]
+}
