@@ -95,7 +95,7 @@ export const UserCard = ({ user }: { user: UserData }) => {
                 <CallCard
                   key={id - index + 1}
                   call={call}
-                  userProps={{ id: id, callIndex: index, propToChange: null }}
+                  userProps={{ id: id, callIndex: index, propToChange: {} }}
                 />
               );
             })}
