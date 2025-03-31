@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { DataContainer } from "../dataContainer/DataContainer";
 import { CallCardSelect } from "./CallCardSelect";
+import { UpdateUserProps } from "../../functions/updateUser";
 
 export interface CallData {
   number: number;
@@ -13,7 +14,13 @@ export interface CallData {
   callRating: number;
 }
 
-export const CallCard = ({ call }: { call: CallData }) => {
+export const CallCard = ({
+  call,
+  userProps,
+}: {
+  call: CallData;
+  userProps: UpdateUserProps;
+}) => {
   const [isDefault, setIsDefault] = useState<boolean>(true);
   const [showSelect, setShowSelect] = useState<boolean>(false);
 
@@ -46,7 +53,7 @@ export const CallCard = ({ call }: { call: CallData }) => {
         </div>
       </div>
       <hr />
-      <DataContainer isDefault={isDefault} call={call} />
+      <DataContainer isDefault={isDefault} call={call} userProps={userProps} />
     </div>
   );
 };

@@ -2,7 +2,7 @@ import { UserData } from "../components/userCard/UserCard";
 
 export interface UpdateUserProps {
   id: number;
-  propToChange: UserData;
+  propToChange: UserData | Record<string, number> | null;
   callIndex?: number;
 }
 

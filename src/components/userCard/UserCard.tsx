@@ -2,6 +2,16 @@ import { useState, useEffect } from "react";
 import { CallCard } from "../callCard/CallCard";
 import { CallData } from "../callCard/CallCard";
 
+interface EmailData {
+  sent: number;
+  open: number;
+  clicked: number;
+  openRate: number;
+  block: number;
+  rebound: number;
+  rating: number;
+}
+
 export interface UserData {
   id: number;
   name: string;
@@ -10,6 +20,8 @@ export interface UserData {
   currentInterest: boolean;
   calls: CallData[];
   overallRating: number;
+  emails: EmailData;
+  callsRating: number;
 }
 
 export const UserCard = ({ user }: { user: UserData }) => {
@@ -79,7 +91,13 @@ export const UserCard = ({ user }: { user: UserData }) => {
           </div>
           <div className="call-cards--container scroll-grid">
             {calls.map((call: CallData, index: number) => {
-              return <CallCard key={id - index + 1} call={call} />;
+              return (
+                <CallCard
+                  key={id - index + 1}
+                  call={call}
+                  userProps={{ id: id, callIndex: index, propToChange: null }}
+                />
+              );
             })}
           </div>
         </div>

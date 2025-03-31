@@ -1,22 +1,22 @@
 import { UserData } from "../components/userCard/UserCard";
 
-export const calculateGeneralRating = ({ person }: { person: UserData }) => {
+export const calculateGeneralRating = (user: UserData) => {
   // Calculamos el Mail Rating
   const emailValue =
-    person.emails.sent * 0.1 +
-    person.emails.open * 0.2 +
-    person.emails.clicked * 0.3 +
-    person.emails.openRate * 0.2 +
-    person.emails.block * -0.1 +
-    person.emails.rebound * -0.1;
+    user.emails.sent * 0.1 +
+    user.emails.open * 0.2 +
+    user.emails.clicked * 0.3 +
+    user.emails.openRate * 0.2 +
+    user.emails.block * -0.1 +
+    user.emails.rebound * -0.1;
   const emailRating = ((emailValue / 2) * 5) / 10;
-  person.emails.rating = emailRating;
+  user.emails.rating = emailRating;
 
   //Calculamos el Call Rating
-  const callsRating = [];
+  const callsRating: number[] = [];
   let totalCallsRating = 0;
-  if (person.calls.length > 0) {
-    person.calls.forEach((call) => {
+  if (user.calls.length > 0) {
+    user.calls.forEach((call) => {
       const callRate =
         call.customerInterest * 0.2 +
         call.objectionsRaised * 0.15 +
@@ -25,7 +25,7 @@ export const calculateGeneralRating = ({ person }: { person: UserData }) => {
         call.callDuration * 0.1 +
         call.technicalQuality * 0.15;
       callsRating.push(callRate);
-      call.callRating = callRate.toFixed(1);
+      call.callRating = Number(callRate.toFixed(1));
       console.log("callRating", call.callRating);
     });
 
@@ -34,11 +34,11 @@ export const calculateGeneralRating = ({ person }: { person: UserData }) => {
       0
     );
     totalCallsRating = sumAllRates / callsRating.length;
-    person.callsRating = totalCallsRating;
+    user.callsRating = totalCallsRating;
   }
 
   //Final rating
-  person.overallRating = (emailRating + totalCallsRating).toFixed(1);
-  //console.log(person.overallRating);
-  return person;
+  user.overallRating = Number((emailRating + totalCallsRating).toFixed(1));
+  //console.log(user.overallRating);
+  return user;
 };
