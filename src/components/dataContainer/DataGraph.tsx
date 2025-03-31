@@ -1,14 +1,16 @@
 import { useState } from "react";
+import { UpdateUserProps } from "../../functions/updateUser";
 
 interface GraphProps {
   isDefault: boolean;
-  value: Record<string, number>;
+  userProps: UpdateUserProps;
   title: string;
 }
 
-export const DataGraph = ({ isDefault, value, title }: GraphProps) => {
-  const categoryKey = Object.keys(value)[0];
-  const categoryValue = value[categoryKey];
+export const DataGraph = ({ isDefault, userProps, title }: GraphProps) => {
+  const { callIndex, id, propToChange } = userProps;
+  const categoryKey = Object.keys(propToChange)[0];
+  const categoryValue = propToChange[categoryKey];
 
   const [handleValue, setHandleValue] = useState(categoryValue);
 
