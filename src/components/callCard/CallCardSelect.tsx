@@ -1,4 +1,5 @@
-//import { useEffect } from "react";
+import { useEffect } from "react";
+// hacer console.log en todos los sitios donde se modifica el valor de setDefaulty setSelect
 
 export const CallCardSelect = ({
   setDefault,
@@ -10,19 +11,22 @@ export const CallCardSelect = ({
   const handleButtonClicks = () => {
     setDefault(false);
     setSelect(false);
+    console.log(setDefault);
+    console.log(setSelect);
   };
 
-  // const handleClick = () => {
-  //   setSelect(false);
-  // };
+  const handleClick = () => {
+    setSelect(false);
+    console.log(setSelect);
+  };
 
-  // useEffect(() => {
-  //   window.addEventListener("click", handleClick);
+  useEffect(() => {
+    window.addEventListener("click", handleClick);
 
-  //   return () => {
-  //     window.removeEventListener("click", handleClick);
-  //   };
-  // });
+    return () => {
+      window.removeEventListener("click", handleClick);
+    };
+  }, []);
 
   return (
     <div className="call-card--select">
