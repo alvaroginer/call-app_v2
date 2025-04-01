@@ -42,13 +42,27 @@ export const CallCard = ({
             <p className="title-container--text__grey">00:12:24</p>
           </div>
           <div className="position-relative">
-            <button
-              onClick={handleClick}
-              className="sub-section--header__button"
-            >
-              <img src="/imgs/dots-vertical.png" alt="Edit Menu" />
-            </button>
-            {showSelect && <CallCardSelect setDefault={setIsDefault} />}
+            {isDefault ? (
+              <button
+                onClick={handleClick}
+                className="sub-section--header__button"
+              >
+                <img src="/imgs/dots-vertical.png" alt="Edit Menu" />
+              </button>
+            ) : (
+              <button
+                onClick={() => setIsDefault(true)}
+                className="sub-section--header__button-save"
+              >
+                Guardar
+              </button>
+            )}
+            {showSelect && (
+              <CallCardSelect
+                setDefault={setIsDefault}
+                setSelect={setShowSelect}
+              />
+            )}
           </div>
         </div>
       </div>

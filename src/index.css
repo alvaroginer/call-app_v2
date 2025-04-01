@@ -142,6 +142,20 @@ img {
   align-items: center;
 }
 
+.sub-section--header__button-save {
+  border: var(--space-1) var(--color-orange) solid;
+  background-color: var(--color-orange);
+  color: var(--color-white);
+  padding: var(--space-5) var(--space-10);
+  transition: all ease-in 0.15s;
+  border-radius: var(--space-5);
+}
+
+.sub-section--header__button-save:hover {
+  background-color: var(--color-white);
+  color: var(--color-orange);
+}
+
 .call-card {
   background-color: white;
   padding: var(--space-10);
@@ -249,7 +263,7 @@ img {
   position: absolute;
   top: var(--space-0);
   right: var(--space-0);
-  min-width: calc(var(--space-100)+ var(--space-10));
+  min-width: calc(var(--space-200)+ var(--space-10));
   transition: all ease-in 0.2s;
 }
 
